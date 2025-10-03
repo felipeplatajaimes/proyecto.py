@@ -30,7 +30,7 @@ El archivo `proyecto.py` incluye:
 ---
 
 
-## 📚 Referencias
+## Referencias
 
 - [World Bank API Documentation](https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation)
 
