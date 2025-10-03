@@ -1,5 +1,3 @@
-# proyecto_final.py
-
 import requests
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -7,8 +5,8 @@ import matplotlib.pyplot as plt
 # ------------------ CONFIGURACIÓN ------------------
 INDICADOR = "NY.GDP.PCAP.CD"
 PAISES = ["CO", "MX", "BR"]
-ANIO_INICIO = 2010
-ANIO_FIN = 2022
+AÑO_INICIO = 2010
+AÑO_FIN = 2022
 
 # ------------------ UTILIDADES ------------------
 def validar_opcion(opcion, opciones_validas):
@@ -31,7 +29,7 @@ def descargar_datos():
     registros = []
 
     for pais in PAISES:
-        url = f"https://api.worldbank.org/v2/country/{pais}/indicator/{INDICADOR}?date={ANIO_INICIO}:{ANIO_FIN}&format=json&per_page=100"
+        url = f"https://api.worldbank.org/v2/country/{pais}/indicator/{INDICADOR}?date={AÑO_INICIO}:{AÑO_FIN}&format=json&per_page=100"
         try:
             respuesta = requests.get(url)
             datos = respuesta.json()[1]
